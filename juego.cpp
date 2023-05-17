@@ -31,13 +31,14 @@ void ocultarCursor(){
 	HANDLE hCon; 
 	hCon = GetStdHandle(STD_OUTPUT_HANDLE);
 	CONSOLE_CURSOR_INFO cci;
-	cci.dwSize = 50;//Toma valores del 1 al 100 para cambiar el tamaño del cursor
+	cci.dwSize = 50;//Toma valores del 1 al 100 para cambiar el tamaÃ±o del cursor
 	cci.bVisible = FALSE;//Si es verdadero se mostrara el cursor, si es falso no se vera el cursor
 	
 	SetConsoleCursorInfo(hCon, &cci); //Nos muestra donde esta el cursor
 	
 }
 
+//Comente esta parte porque ya no la necesitaba ya que solo era de referencia
 //Creamos los limites del escenario
 /*void pintarLimites(){
 	//el 120 indica el largo de la pantalla
